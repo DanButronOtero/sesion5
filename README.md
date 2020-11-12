@@ -50,14 +50,45 @@
 ### Propiedades que no permitan fumadores.
 
 ```json
-
+{
+ filter: {
+  house_rules: {
+   $in: [
+    RegExp('NO smoke', i),
+    RegExp('not smoke', i)
+   ]
+  }
+ }
+}
 ```
 
-
+![smoke](img/3.png)
 
 ### Propiedades que no permitan fiestas ni fumadores.
 
 ```json
-
+{
+ filter: {
+  $and: [
+   {
+    house_rules: {
+     $in: [
+      RegExp('no smoke', i),
+      RegExp('not smoke')
+     ]
+    }
+   },
+   {
+    house_rules: {
+     $in: [
+      RegExp('no parties', i),
+      RegExp('not parties')
+     ]
+    }
+   }
+  ]
+ }
+}
 ```
 
+![no fiestas ni fumar](img/4.png)
