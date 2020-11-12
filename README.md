@@ -92,3 +92,22 @@
 ```
 
 ![no fiestas ni fumar](img/4.png)
+
+## Reto 2: Notación punto y arreglos
+
+```json
+{
+    "review_scores.review_scores_rating":{
+        $gte:80
+    },
+    "number_of_reviews":{
+        $gte:50
+    }
+    ,amenities:{
+        $in:[/ethernet/i]
+    },
+    "address.country":/brazil/i
+}
+```
+
+![reto2](img/5.png)
