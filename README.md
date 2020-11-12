@@ -10,6 +10,7 @@
   house_rules: RegExp('NO parties', i)
  }
 }
+
 ```
 
 ![1](img/1.png)
