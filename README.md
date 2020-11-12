@@ -111,3 +111,16 @@
 ```
 
 ![reto2](img/5.png)
+
+## Reto 3: Introducción a las agregaciones
+
+```json
+{amenities:
+ 	{
+    $in:[/net/i,/wifi/i]
+	}
+}
+```
+
+![internet](img/6.png)
+
