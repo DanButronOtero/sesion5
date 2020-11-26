@@ -95,6 +95,8 @@
 
 ## Reto 2: Notación punto y arreglos
 
+Usando la colección `sample_airbnb.listingsAndReviews`,  agrega un filtro que permita obtener todas las publicaciones que tengan  50 o más comentarios, que la valoración sea mayor o igual a 80, que  cuenten con conexión a Internet vía cable y estén ubicada en Brazil.
+
 ```json
 {
     "review_scores.review_scores_rating":{
@@ -113,6 +115,8 @@
 ![reto2](img/5.png)
 
 ## Reto 3: Introducción a las agregaciones
+
+Usando la colección `sample_airbnb.listingsAndReviews`,  mediante el uso de agregaciones, encontrar el número de publicaciones  que tienen conexión a Internet, sea desde Wifi o desde cable (Ethernet).
 
 ```json
 {amenities:
